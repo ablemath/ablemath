@@ -4,23 +4,15 @@ title: Program Information
 permalink: /programinfo/
 weight: 3
 ---
+%p
+  The Able Enrichment Centre is designed for students from grades 6 to 12.
+  Our curriculum focuses on mental math and problem solving skills,
+  covering a broad range of topics from basic algebra up to calculus. 
 
-<div class="home">
+%p
+  Our curriculum is available in PDF format. Click the link below to view.
 
-  <h1 class="page-heading">Program Information</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+%p
+  %a{href: "/docs/AEC_curriculum_{{ site.registrationdate | date: '%y' }}.pdf"} {{ site.registrationdate | date: '%Y' }} AEC Curriculum
+%p
+  %a{href: "/docs/AEC_calendar_{{ site.registrationdate | date: '%y' }}.pdf"} {{ site.registrationdate | date: '%Y' }} AEC Calendar
