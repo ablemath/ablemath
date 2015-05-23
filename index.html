@@ -3,21 +3,18 @@ layout: default
 ---
 
 <div class="home">
+  <p class="tagline">Welcome to the Able Enrichment Center (AEC), a Saturday Mathematics school located in Winnipeg, Manitoba, Canada. </p>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p>
+  Able Enrichment Centre (AEC) is a non-profit, volunteer operated, community
+  organization where students enrich their knowledge, operating skills and
+  interests in mathematics. The main objectives of the centre are; to remove
+  the students' fear of mathematics and to reinforce the students' confidence
+  to master mathematics. The Centre provides recreational programs, such as
+  line dancing, badminton and basket ball games for parents and friends. The
+  Centre also provides the opportunity for university students to practice
+  their skills in teaching and mentoring younger students.
+  (<a href="{{ "/about/" }}">Read More</a>)
+  </p>
 
 </div>
