@@ -1,9 +1,7 @@
 ---
 layout: page
-title: About & Contact
+title: About
 permalink: /about/
-weight: 4
-topmenu: true
 ---
 
 .row
@@ -78,15 +76,9 @@ topmenu: true
     %h1 Board of Directors
 
     %p
-      The present Board of Directors for 2005/2006 includes: 
-
-    :markdown
-      * **President** (General): Dr. Hermann Lee (bio)
-      * **Vice President** (Treasurer): Mr. Patrick Lowe (bio)
-      * **Vice President** (Principal): Mr. Nathan Lee (bio)
-      * **Advisor**: Mr. Sanson Yee (bio)
-      * **Advisor**: Mrs. Bibiana Yee (bio)
-      * **Public Relation** (Recreation): Mr. Matthias Yeung (bio)
-      * **Project Manager** (Dean): Mr. Patrick Wong (bio)
-
-      Note: Position and Title in brackets denote duties in school.
+      The present Board of Directors for {{ site.registrationdate | date: '%Y' }}/{{ site.registrationdate | date: '%Y' | plus: 1 }} includes: 
+      %ul
+        {% for board in site.data.board %}
+        %li
+          = "<strong>{{ board.position }}</strong>: {{ board.name }} (<a href=\"/about/board/#{{ board.slug }}\">Bio</a>)"
+        {% endfor %}
