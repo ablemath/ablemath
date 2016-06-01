@@ -42,12 +42,14 @@ $on-laptop:        800px;
     }
 }
 
+body {
+  background: $background-color;
+}
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
         "layout",
-        "syntax-highlighting",
-        "bootstrap.min.css"
+        "syntax-highlighting"
 ;
