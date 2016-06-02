@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Announcements
-permalink: /announcements/
+paginate_path: /announcements/page-:num/
 weight: 1
 topmenu: true
 ---
@@ -11,17 +11,48 @@ topmenu: true
   <h1 class="page-heading">Announcements</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <p>{{ post.excerpt }}</p>
+        <p>{{ post.content }}</p>
+        <hr>
       </li>
     {% endfor %}
   </ul>
+
+  {% if paginator.total_pages > 1 %}
+  <nav>
+    <ul class="pagination">
+      <li class="{% unless paginator.previous_page %}disabled{% endunless %}">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+        {% else %}
+          <span aria-hidden="true">&laquo;</span>
+        {% endif %}
+      </li>
+      {% for page in (1..paginator.total_pages) %}
+        <li class="{% if page == paginator.page %}active{% endif %}">
+          {% if page == 1 %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+          {% else %}
+            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+      <li class="{% unless paginator.next_page %}disabled{% endunless %}">
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
+        {% else %}
+          <span aria-hidden="true">&raquo;</span>
+        {% endif %}
+      </li>
+    </ul>
+  </nav>
+  {% endif %}
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 

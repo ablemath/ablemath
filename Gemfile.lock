@@ -75,3 +75,4 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-haml
+  jekyll-paginate

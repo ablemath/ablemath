@@ -17,3 +17,5 @@ registrationdate: 2016-10-01
 
 # Build settings
 markdown: kramdown
+paginate: 10
+paginate_path: "/announcements/page:num/"
