@@ -6,7 +6,9 @@ categories: Notices
 ---
 
 There will be no classes on the following dates:
+
 * February 24th
 * March 31st
 * May 19th
 
+[February 2018 Newsletter](/docs/newsletters/newsletter_180217.pdf)
