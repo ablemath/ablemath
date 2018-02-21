@@ -10,6 +10,12 @@ layout: default
   <p class="tagline">Welcome to the Able Enrichment Center (AEC), a Saturday Mathematics school located in Winnipeg, Manitoba, Canada. </p>
 
   <p class="text-center"><strong>AEC will be held at St. John's Ravenscourt for the {{ site.registrationdate | date: '%Y' }}-{{ site.registrationdate | date: '%Y' | plus: 1 }} year.</strong></p>
+  <p class="text-center">
+    <strong>
+      Registration date: {{ site.registrationdate | date: '%B %d, %Y' }}<br>
+      First day of classes: {{ site.classdate | date: '%B %d, %Y' }}
+    </strong>
+  </p>
 
   <p>
   Able Enrichment Centre (AEC) is a non-profit, volunteer operated, community
@@ -29,5 +35,6 @@ layout: default
     <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
   </p>
+  {{ post.content }}
 
 </div>
