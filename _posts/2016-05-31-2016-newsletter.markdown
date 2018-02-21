@@ -1,0 +1,12 @@
+---
+layout: post
+title: "2016 Newsletter"
+date: 2016-05-28 00:00:00
+categories: Notices
+---
+
+The 2016 newsletter and summer camp information has been released.
+
+[ May 28, 2016 Newsletter ](/docs/newsletters/newsletter_150528.pdf)
+
+[ Summer Camp Pamphlet 2016 ](/docs/2016/summer.pdf)
