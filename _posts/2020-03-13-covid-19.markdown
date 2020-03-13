@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "School Closed Due To COVID-19 Pandemic"
+date:   2020-03-13 17:30:00
+categories: "Year Information"
+---
+Following the guidelines from the Government of Canada Public Health and
+Manitoba Public Health regarding COVID-19, we will be cancelling all math
+classes until further notice. Parents and students will be notified when classes
+resume.
+
+Thank you for your patience.
