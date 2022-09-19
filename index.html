@@ -9,18 +9,11 @@ layout: default
 <div class="home">
   <p class="tagline">Welcome to the Able Enrichment Center (AEC), a Saturday Mathematics school located in Winnipeg, Manitoba, Canada. </p>
 
-  <!--
   <p class="text-center"><strong>AEC will be held at St. John's Ravenscourt for the {{ site.registrationdate | date: '%Y' }}-{{ site.registrationdate | date: '%Y' | plus: 1 }} year.</strong></p>
   <p class="text-center">
     <strong>
-      Registration date: {{ site.registrationdate | date: '%B %d, %Y' }}<br>
+      Registration date: {{ site.registrationdate | date: '%B %d, %Y' }}. New students at 2pm, returning students at 3pm.<br>
       First day of classes: {{ site.classdate | date: '%B %d, %Y' }}
-    </strong>
-  </p>
-  -->
-  <p class="text-center">
-    <strong>
-      The 2020-2021 academic year has been cancelled. Please see below.
     </strong>
   </p>
 
@@ -36,12 +29,16 @@ layout: default
   (<a href="{{ "/about/" }}">Read More</a>)
   </p>
 
-  <h1>Latest Announcement</h1>
-  {% assign post = site.posts.first %}
-  <p>
-    <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-  </p>
-  {{ post.content }}
+  <section>
+    <h1>Latest Announcement</h1>
+    {% assign post = site.posts.first %}
+    <article class="post-content">
+      <header>
+        <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </header>
+      {{ post.content }}
+    </article>
+  </section>
 
 </div>
