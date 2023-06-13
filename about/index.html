@@ -1,0 +1,53 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+<div class="row">
+  <div class="col-md-3">
+    <ul class="nav">
+      <li>
+        <a href="#mission">Mission Statement</a>
+      </li>
+      <li>
+        <a href='#history'>History</a>
+      </li>
+      <li>
+        <a href='#board'>Board of Directors</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-9">
+    <h1 id="mission">Mission Statement</h1>
+    <p>
+      Able Enrichment Centre is a non-profit, volunteer operated, community       organization where students enrich their knowledge, operating skills       and interests in mathematics. The main objectives of the centre are;       to remove the students' fear of mathematics and to reinforce the students'       confidence to master mathematics. The Centre provides recreational programs,       such as line dancing, badminton and basket ball games for parents and       friends. The Centre also provides the opportunity for university students 
+      to practice their skills in teaching and mentoring younger students.
+    </p>
+    <p>
+      A.E.C. is for students to achieve excellent credit in mathematics.
+    </p>
+    <h1 id="history">History of Able Enrichment Centre</h1>
+    <p>
+      Able Enrichment Centre was established in the Summer of 1995 by a group of       parents in the communities of St. Vital, Lindenwood, Waverley Height, and       Fort Richmond. Initially, lead by Mr. Sanson Yee, Mrs. Bibiana Yee, Mr.       Michael Lai, Dr. Hermann Lee, Mr. Matthias Yeung, Mr,Hung and Mrs. Anna Hung       to request then the Winnipeg South School Division #3 (now named The Pembina       Trails School Division) for the use of classrooms in their Linden Meadow       School at 335 Lindenwood Drive East, Winnipeg. Mr. Sanson Yee was appointed       as the Principal of the Centre by the parents. Mr. Sanson Yee, Mr. Patrick       Wong and two other teachers were engaged to give lessons to students.       After having consulted with the parents, Mr. Yee designed a school calendar       that there would be three terms in one school year. There were only 16 students       enrolled in the Fall Term of 1995/1996, 11 students in the Winter Term and       ended with only 7 students in the Spring Term. Most of the parents were       disappointed and suggested to dissolved the Centre except Mr. Michael Lai and       Mrs. Rene Lai who donated a sum of two hundred dollars to the Centre and       repeatedly requested Mr. Yee to carry on the task as Principal and to run the       Centre. An advertisement was put on the local community Chinese newspapers to       seek for students. It was very encouraging that 27 students were enrolled in 
+      the Fall Term of 1996/1997.
+    </p>
+    <p>
+      A Board of Directors was formed in September 1996 with Dr. Hermann Lee as       the President, Mr. Sanson Yee as the Vice President and Principal, Mrs.       Bibiana Yee as the Secretary and administrator, Mr. Matthias Yeung as the       Public Relation and Recreation, Mrs. Anna Hung as Treasurer, Mr. Patrick       Wong and Mr. Michael Lai as Board members. A constitution and charter was       submitted to the Department of Corporation, Manitoba Government and registere       as a Non-Profit Organization in December 1996. The structure of classes are       divided into 5 levels, namely, level one for day school students grade 6 &7,       level two for grade 7,8,and 9, level three for grade 8,9,and 10. Level four       for grade 9,10 and 11 and level five for grade 10,11 and 12. Since then,       the number of students enrolled increasing rapidly from 27 to 56, 89, 126,       158 and even reaching 198 in 2002/2003. In 1997/98, Mr. & Mrs. Hung moved to       Regina, Mr. Robert Lee then volunteered as the Treasurer for a year. In 1998, 
+      Mr. Patrick Lowe was invited to the Board as Vice President and Treasurer.
+    </p>
+    <p>
+      After nine years in operation, many parents requested the Board to find a solution to admit their younger children (grade 5 day students) to the Program. The Principal, Mr. Yee suggests to the Board to open up a Level “Zero” as preparatory class. Finally, this was finalized in the Winter Term of 2004/2005. Hence, the Program now consists of six levels and admits grade 5 (age 10 minimum) to grade 12 day students from schools all over the City of Winnipeg, Courses included in the program are from Arithmetic to Calculus.
+    </p>
+    <h1 id="board">Board of Directors</h1>
+    <p>
+      The present Board of Directors for {{ site.registrationdate | date: '%Y' }}/{{ site.registrationdate | date: '%Y' | plus: 1 }} includes: 
+      <ul>
+        {% for board in site.data.board %}
+        <li>
+          <strong>{{ board.position }}</strong>: {{ board.name }} (<a href="/about/board/#{{ board.slug }}">Bio</a>)
+        </li>
+        {% endfor %}
+      </ul>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+---
+layout: page
+title: Board of Directors
+permalink: /about/board/
+---
+
+{% for board in site.data.board %}
+  <h4 id="{{ board.slug }}">{{ board.name }}{% if board.accreditions %}, {{ board.accreditions }}{% endif %}, {{ board.position }}</h4>
+  <p>{{ board.bio }}</p>
+  <p><a href="javascript:history.back()">Back</a></p>
+{% endfor %}
+
