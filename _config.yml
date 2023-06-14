@@ -13,8 +13,8 @@ mailaddress: >
   R3T 3K5
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ablemath.ca" # the base hostname & protocol for your site
-registrationdate: 2022-10-01
-classdate: 2022-10-15
+registrationdate: 2023-09-16
+classdate: 2023-09-30
 
 # Build settings
 markdown: kramdown
