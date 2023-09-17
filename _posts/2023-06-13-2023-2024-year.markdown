@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "2023/2024 Year Information"
-date:   2023-06-13 08:00:00
+title:  "2023/2024 Year Information (Updated)"
+date:   2023-09-17 12:00:00
 categories: "Year Information"
 ---
 Dear parents and students, we are excited to announce that Able Enrichment will
@@ -22,3 +22,5 @@ between 3-4pm. As all assessments take time, we ask that people do not rush in
 early and spread your arrival out through the hour.
 
 School fees are $360 for the year per student. 
+
+No classes on: October 14, November 11
