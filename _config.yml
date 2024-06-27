@@ -12,9 +12,9 @@ mailaddress: >
   Winnipeg, MB<br />
   R3T 3K5
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ablemath.ca" # the base hostname & protocol for your site
-registrationdate: 2023-09-16
-classdate: 2023-09-30
+url: "https://ablemath.ca" # the base hostname & protocol for your site
+registrationdate: 2024-09-14
+classdate: 2024-09-28
 
 # Build settings
 markdown: kramdown
