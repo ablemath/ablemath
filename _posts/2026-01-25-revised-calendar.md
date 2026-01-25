@@ -7,20 +7,66 @@ categories: "Year Information"
 
 Please note the following changes to the inservice dates in Term 2:
 
-| Jan 3, 26 | Term 2 Start |
-| Jan 10, 26 | |
-| Jan 17, 26 | |
-| Jan 24, 26 | No Class - SJR Event |
-| Jan 31, 26 | |
-| Feb 7, 26 | No Class - SJR Event |
-| Feb 14, 26 | |
-| Feb 21, 26 | No Class - SJR Event |
-| Feb 28, 26 | |
-| Mar 7, 26 | |
-| Mar 14, 26 | |
-| Mar 21, 26 | |
-| Mar 28, 26 | |
-| Apr 4, 26 | No Class - Easter weekend |
+<table class="table">
+<tbody>
+<tr>
+<td>Jan 3, 26</td>
+<td>Term 2 Start</td>
+</tr>
+<tr>
+<td>Jan 10, 26</td>
+<td></td>
+</tr>
+<tr>
+<td>Jan 17, 26</td>
+<td></td>
+</tr>
+<tr>
+<td>Jan 24, 26</td>
+<td>No Class - SJR Event</td>
+</tr>
+<tr>
+<td>Jan 31, 26</td>
+<td></td>
+</tr>
+<tr>
+<td>Feb 7, 26</td>
+<td>No Class - SJR Event</td>
+</tr>
+<tr>
+<td>Feb 14, 26</td>
+<td></td>
+</tr>
+<tr>
+<td>Feb 21, 26</td>
+<td>No Class - SJR Event</td>
+</tr>
+<tr>
+<td>Feb 28, 26</td>
+<td></td>
+</tr>
+<tr>
+<td>Mar 7, 26</td>
+<td></td>
+</tr>
+<tr>
+<td>Mar 14, 26</td>
+<td></td>
+</tr>
+<tr>
+<td>Mar 21, 26</td>
+<td></td>
+</tr>
+<tr>
+<td>Mar 28, 26</td>
+<td></td>
+</tr>
+<tr>
+<td>Apr 4, 26</td>
+<td>No Class - Easter weekend</td>
+</tr>
+</tbody>
+</table>
 
 [2025/2026 Calendar](/docs/2025/calendar.pdf)
 
